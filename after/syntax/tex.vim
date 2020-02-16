@@ -1,9 +1,6 @@
 " Original file is https://github.com/wjakob/wjakob.vim/blob/master/after/syntax/tex.vim
 
 if has('conceal')
-  " More paper specific (what to do with these??)
-  syn match texMathSymbol '\\pathspace' contained conceal cchar=Ω
-  syn match texMathSymbol '\\surfaces' contained conceal cchar=𝓜
 
   " more reasonably sized symbols that were already defined
   syn match texMathSymbol '\\Rightarrow\>' contained conceal cchar=⇒
@@ -11,6 +8,8 @@ if has('conceal')
   syn match texMathSymbol '\\rightarrow\>' contained conceal cchar=→
   syn match texMathSymbol '\\leftarrow\>' contained conceal cchar=←
   syn match texMathSymbol '\\emptyset\>' contained conceal cchar=Ø
+  syn match texMathSymbol '\\varnothing\>' contained conceal cchar=Ø
+  syn match texMathSymbol '\\colon\>' contained conceal cchar=:
   syn match texMathSymbol '\\varphi\>' contained conceal cchar=φ
   syn match texMathSymbol '\\phi\>' contained conceal cchar=Φ
   syn match texMathSymbol '\\langle\>\s*' contained conceal cchar=⟨
